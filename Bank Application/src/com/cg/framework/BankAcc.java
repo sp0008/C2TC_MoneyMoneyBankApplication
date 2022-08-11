@@ -18,16 +18,11 @@ public abstract class BankAcc
 	{
 		System.out.println("Account balance available:"+accBal);
 	}
-	public void deposite(float accBal)
+	public void deposit(float accBal)
 	{
 		System.out.println("Available Balance after depositing:"+accBal);
 	}
-	@Override
-	public String toString()
-	{
-		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
-	}
-
+	
 	public int getAccNo()
 	{
 		return accNo;
@@ -56,5 +51,11 @@ public abstract class BankAcc
 	public void setAccBal(float accBal)
 	{
 		this.accBal = accBal;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
 	}
 }
