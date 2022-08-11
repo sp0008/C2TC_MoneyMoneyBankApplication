@@ -1,6 +1,6 @@
 package com.cg.framework;
 
-public class SavingAcc extends BankAcc
+public abstract class SavingAcc extends BankAcc
 {
 	private boolean isSalaried;
 	private static final  float MINBAL=100;
