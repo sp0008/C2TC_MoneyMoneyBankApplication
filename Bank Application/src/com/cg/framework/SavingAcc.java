@@ -14,12 +14,7 @@ public class SavingAcc extends BankAcc
 	{
 		System.out.println("Remaining balace after withdrawal :"+accBal);	
 	}
-	@Override
-	public String toString() 
-	{
-		return "SavingAcc [isSalaried=" + isSalaried + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-		+ ", hashCode()=" + hashCode() + "]";
-	}
+	
 	public boolean isSalaried() 
 	{
 		return isSalaried;
@@ -32,4 +27,10 @@ public class SavingAcc extends BankAcc
 	{
 		return MINBAL;
 	}
+	
+	@Override
+	public String toString() {
+		return "SavingAcc [isSalaried=" + isSalaried + ", isSalaried()=" + isSalaried() + ", toString()="
+				+ super.toString() + ", getAccNo()=" + getAccNo() + ", getAccNm()=" + getAccNm() + ", getAccBal()="
+				+ getAccBal() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 }
